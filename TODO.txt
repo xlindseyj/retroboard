@@ -1,0 +1,10 @@
+-Iterate through Hashmap to finish clear button
+-Cases for duplicate cards in the same column (Add Card)
+-Server Integration
+-More styling
+-Fix live easter egg (Not showing up)
+-Fix live drag and drop (Not working, works on local)
+-Make click event for finding waldo, make square hidden but clickable
+-Create modal(s)
+-If two things have the same ids as on the boards they need to be assigned a way to have duplicates
+-Authentication?

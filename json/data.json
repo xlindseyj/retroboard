@@ -1,0 +1,27 @@
+[
+	{
+        "name": "Add Card",
+        "subHeader": [
+            {
+                "name": "Ideas",
+                "view": "#Ideas"
+            },
+            {
+                "name": "Retro",
+                "view": "#Retro"
+            },
+            {
+                "name": "Blockers",
+                "view": "#Blockers"
+            },
+            {
+                "name": "Solutions",
+                "view": "#Solutions"
+            },
+			{
+				"name": "Completed",
+                "view": "#Completed"
+			}
+        ]
+    }
+]

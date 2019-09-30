@@ -1,0 +1,57 @@
+<!-- 
+If it's not commented, leave it alone
+-Jake
+-->
+<html oncontextmenu="return false">
+	
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/controller.js"></script>
+	<script src="../js/scripts.js"></script>
+	
+	<script>
+	function myTimer() {
+		var counter = 60;
+		document.getElementById("test").innerHTML = ("Time Remaining: 60s");
+
+		var id = setInterval(function() {
+			counter--;
+			if(counter < 0) {
+				clearInterval(id);
+				document.getElementById("waldo").style.visibility = "hidden";
+				alert("Oh no, looks like you're out of time.");
+				window.top.location.href="../index.html";
+			} else {
+				document.getElementById("test").innerHTML = ("Time Remaining: " + counter.toString() + "s");
+			}
+		}, 1000);	
+	}
+	</script>
+	
+	<head>
+		<link rel="stylesheet" href="../css/bootstrap.css" type="text/css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" href="../img/favicon.png">
+		<title>RetroBoard</title>
+	</head>
+	
+	<body onload="rules()" style="background-color: #0071bf;">
+		<div class="navbar">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="../index.html">RetroBoard</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+		<div>
+			<img id="waldo" class="img-responsive" src="http://www.bigblogofteachingideas.com/wp-content/uploads/2015/05/wally1.jpg" alt="Where's Waldo">
+		</div>
+		<div id="test">
+			<script>myTimer();</script>
+		</div>	
+	</body>
+</html>
